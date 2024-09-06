@@ -1,0 +1,60 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Sep 5, 2024, 1:03:34 PM
+    Author     : laver
+*/
+
+
+.input1{
+    position: relative;
+    height: 30px;
+    width: 200px;
+    left: 400px;
+    
+}
+
+.input2{
+    position: relative;
+    height: 30px;
+    width: 400px;
+    left: 500px;
+}
+
+.input3{
+    position: relative;
+    left: 400px;
+}
+
+input[type="submit"]{
+    width: 300px;
+}
+
+textarea{
+    position: relative;
+    height: 250px;
+    width: 400px;
+    left: 500px;
+}
+
+label{
+    position: relative;
+    left: 400px;
+}
+
+.perfil{
+    position: relative;
+    left: 620px;
+}
+
+html{
+    background-image: url(images/fondo.jpg);
+    background-size: cover; /* Ajusta la imagen para cubrir toda la página */
+    background-position: center; /* Centra la imagen en la página */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Hace que la imagen se mantenga fija mientras se desplaza */
+    font-weight: bold;
+}
+

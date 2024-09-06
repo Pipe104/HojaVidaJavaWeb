@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Formulario de hoja de vida</title>
+        <link rel = "stylesheet" href="estilo.css"/>
+        <script src = "funciones.js"  language='JavaScript1.2'></script>
+
+    </head>
+    <body>
+        <center>
+            <h1>Hoja de vida</h1>
+        </center>
+        <p>
+            <center>   
+                Incluye tu nombre completo y al menos un método de contacto que puedan utilizar los empleadores.
+            </center>
+        </p>
+        <form action="Hoja2" method="get">
+            <table>
+                <tr>
+                    <td>
+                        <label for="nombre">Nombre y Apellidos</label>
+                        <br>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" class="input1" required>
+                    </td>
+                    <td rowspan="3">
+                        <label for="perfil" class="perfil">Perfil profesional</label>
+                        <br>
+                        <textarea 
+                            id="perfil" 
+                            name="perfil"
+                            placeholder="Aquí debe escribir una idea de sus habilidades profesionales, ademas debe decirsor que idiomas maneja y que nivel tiene." required>
+                        </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="nacimiento">Fecha de nacimiento</label>
+                        <br>
+                        <input type="date" id="nacimiento" name="nacimiento" class="input1" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="edad">Edad</label>
+                        <br>
+                        <input type="number" id="edad" name="edad" min="18" max="99" placeholder="Ingrese su edad" class="input1" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <label>Elige tu sexo:</label>
+                        <br>
+                        <input type="radio" id="femenino" name="sexo" value="Femenino" class="input3" required>
+                        <label for="femenino">Femenino</label>
+                        <br>
+                        <input type="radio" id="masculino" name="sexo" value="Masculino" class="input3" required>
+                        <label for="masculino">Masculino</label>
+                        <br>
+                        <input type="radio" id="otro" name="sexo" value="Otro" class="input3" required>
+                        <label for="otro">Otro</label>
+                        
+                    </td>
+                    <td rowspan="5">
+                        <label for="experiencia" class="perfil">Experiencia laboral</label>
+                        <br>
+                        <textarea id="experiencia" name="experiencia" placeholder="Escriba los lugares en los que trabajo por ejemplo, la fecha en la que salio y la fecha en la que entro." required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <label>¿Cuenta con libreta militar?</label>
+                        <br>
+                        <input type="radio" id="siLibreta" name="libreta" value="Si" class="input3" required>
+                        <label for="siLibreta">Si</label>
+                        <br>
+                        <input type="radio" id="noLibreta" name="libreta" value="No" class="input3" required>
+                        <label for="noLibreta">No</label> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <label for="fechaLibreta">Fecha de expedicion de la libreta militar</label>
+                        <br>
+                        <input type="date" id="fechaLibreta" name="fechaLibreta" class="input1" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <label for="identificacion">Número de identificación</label>
+                        <br>
+                        <input type="number" id="identificacion" name="identificacion" placeholder="Ingrese su número de identificación" class="input1" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <label for="telefono">Teléfono</label>
+                        <br>
+                        <input type="number" id="telefono" name="telefono" placeholder="Ingrese su número de teléfono" class="input1" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <label for="email">Email</label>
+                        <br>
+                        <input type="email" id="email" name="email" placeholder="Escriba su correo electrónico" class="input1" required>
+                    </td>
+                    <td rowspan="8">
+                        <label for="nombre1" class="perfil">Primera referencia laboral</label>
+                        <br>
+                        <input type="text" id="nombre1" name="nombre1" placeholder="Ingrese el nombre se su primera referencia laboral" class="input2" required>
+                        <br><br>
+                        <input type="number" id="telefono1" name="telefono1" placeholder="Ingrese su número de teléfono" class="input2" required>
+                        <br><br>
+                        <label for="nombre2" class="perfil">Segunda referencia laboral</label>
+                        <br>
+                        <input type="text" id="nombre2" name="nombre2" placeholder="Ingrese el nombre se su segunda referencia laboral" class="input2" required>
+                        <br><br>
+                        <input type="number" id="telefono2" name="telefono2" placeholder="Ingrese su número de teléfono" class="input2" required>
+                        <br><br><br>
+                        <label for="nombre3" class="perfil">Primera referencia personal</label>
+                        <br>
+                        <input type="text" id="nombre3" name="nombre3" placeholder="Ingrese el nombre se su primera referencia personal" class="input2" required>
+                        <br><br>
+                        <input type="number" id="telefono3" name="telefono3" placeholder="Ingrese su número de teléfono" class="input2" required>
+                        <br><br>
+                        <label for="nombre4" class="perfil">Segunda referencia personal</label>
+                        <br>
+                        <input type="text" id="nombre4" name="nombre4" placeholder="Ingrese el nombre se su segunda referencia personal" class="input2" required>
+                        <br><br>
+                        <input type="number" id="telefono4" name="telefono4" placeholder="Ingrese su número de teléfono" class="input2" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <label for="primaria"> Escuela primaria</label>
+                        <br>
+                        <input type="text" id="primaria" name="primaria" placeholder="Ingrese la escuela en la que se graduo de primaria" class="input1" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <label for="fechaPrimaria">Fecha de graduacion de primaria</label>
+                        <br>
+                        <input type="date" id="fechaPrimaria" name="fechaPrimaria" class="input1" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <label for="secundaria"> Escuela secundaria</label>
+                        <br>
+                        <input type="text" id="secundaria" name="secundaria" placeholder="Ingrese la escuela en la que se graduo de secundaria" class="input1" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <label for="fechaSecundaria">Fecha de graduacion de secundaria</label>
+                        <br>
+                        <input type="date" id="fechaSecundaria" name="fechaSecundaria" class="input1" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <label for="universidad">Institucion de educacion superior</label>
+                        <br>
+                        <input type="text" id="universidad" name="universidad" placeholder="Ingrese la universidad en la que estudió" class="input1" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <label for="titulo">Titulo de educacion superior</label>
+                        <br>
+                        <input type="text" id="titulo" name="titulo" placeholder="Escriba el nombre de tu título de pregrado" class="input1" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <label for = "fechaUniversidad">Fecha de graduacion de sus estudios de educacion superior</label>
+                        <br>
+                        <input type="date" id="fechaUniversidad" name="fechaUniversidad" class="input1" required>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <center>
+                <input type="submit" value="Enviar">
+            </center>
+            </form>
+            
+    </body>
+</html>
