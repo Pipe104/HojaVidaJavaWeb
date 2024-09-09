@@ -62,19 +62,19 @@ public class Hoja2 extends HttpServlet {
         ReferenciasLaborales rLaborales = new ReferenciasLaborales();
         
         //Recibiendo las referencias laborales
-        rLaborales.setRLpersona1(request.getParameter("nombre1"));
-        rLaborales.setRLtelefono1(Long.parseLong(request.getParameter("telefono1")));
-        rLaborales.setRLpersona2(request.getParameter("nombre2"));
-        rLaborales.setRLtelefono2(Long.parseLong(request.getParameter("telefono2")));
+        rLaborales.setNReferencia1(request.getParameter("nombre1"));
+        rLaborales.setTReferencia1(Long.parseLong(request.getParameter("telefono1")));
+        rLaborales.setNReferencia2(request.getParameter("nombre2"));
+        rLaborales.setTReferencia2(Long.parseLong(request.getParameter("telefono2")));
 
         //Instancia para las referencias personales
         ReferenciasPersonales rPersonales = new ReferenciasPersonales();
         
         //Recibiendo las referencias personales
-        rPersonales.setRPersona1(request.getParameter("nombre3"));
-        rPersonales.setRTelefono1(Long.parseLong(request.getParameter("telefono3")));
-        rPersonales.setRPersona2(request.getParameter("nombre4"));
-        rPersonales.setRTelefono2(Long.parseLong(request.getParameter("telefono4")));
+        rPersonales.setNReferencia1(request.getParameter("nombre3"));
+        rPersonales.setTReferencia1(Long.parseLong(request.getParameter("telefono3")));
+        rPersonales.setNReferencia2(request.getParameter("nombre4"));
+        rPersonales.setTReferencia2(Long.parseLong(request.getParameter("telefono4")));
         
         //Intancia para la educacion
         Educacion educacion = new Educacion();
@@ -171,24 +171,24 @@ public class Hoja2 extends HttpServlet {
             out.println(                "<td rowspan='6'>");
             out.println(                    "<br>");
             out.println(                    "<p>Primera referencia laboral</p>");
-            out.println(                    rLaborales.getRLpersona1());
+            out.println(                    rLaborales.getNReferencia1());
             out.println(                    "<br>");
-            out.println(                    rLaborales.getRLtelefono1());
+            out.println(                    rLaborales.getTReferencia1());
             out.println(                    "<br><br>");
             out.println(                    "<p>Segunda referencia laboral</p>");
-            out.println(                    rLaborales.getRLpersona2());
+            out.println(                    rLaborales.getNReferencia2());
             out.println(                    "<br>");
-            out.println(                    rLaborales.getRLtelefono2());
+            out.println(                    rLaborales.getTReferencia2());
             out.println(                    "<br>");
             out.println(                    "<p>Primera referencia personal</p>");
-            out.println(                    rPersonales.getRPersona1());
+            out.println(                    rPersonales.getNReferencia1());
             out.println(                    "<br>");
-            out.println(                    rPersonales.getRTelefono1());
+            out.println(                    rPersonales.getTReferencia1());
             out.println(                    "<br><br>");
             out.println(                    "<p>Segunda referencia personal</p>");
-            out.println(                    rPersonales.getRPersona2());
+            out.println(                    rPersonales.getNReferencia2());
             out.println(                    "<br>");
-            out.println(                    rPersonales.getRTelefono2());
+            out.println(                    rPersonales.getTReferencia2());
             out.println(                "</td>");
             out.println(            "</tr>");
             out.println(            "<tr>");
