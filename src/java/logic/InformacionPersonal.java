@@ -11,11 +11,13 @@ package logic;
 public class InformacionPersonal {
     private String nombre;
     private int edad;
-    private int nacimiento;
+    private String nacimiento;
     private String sexo;
-    private int telefono;
+    private long telefono;
     private String email;
-    private int identificacion;
+    private long identificacion;
+    private String libreta;
+    private String fechaLibreta;
     
     //Enviar nombre
     public String getNombre(){
@@ -36,11 +38,11 @@ public class InformacionPersonal {
     }
     
     //Enviar nacimiento
-    public int getNacimiento(){
+    public String getNacimiento(){
         return nacimiento;
     }
     
-    public void setNacimiento(int nacimiento){
+    public void setNacimiento(String nacimiento){
         this.nacimiento = nacimiento;
     }
     
@@ -54,11 +56,11 @@ public class InformacionPersonal {
     }
     
     //Enviar telefono
-    public int getTelefono(){
+    public long getTelefono(){
         return telefono;
     }
     
-    public void setTelefono(int telefono){
+    public void setTelefono(long telefono){
         this.telefono = telefono;
     }
     
@@ -72,11 +74,40 @@ public class InformacionPersonal {
     }
     
     //Enviar Identificacion
-    public int getIdentificacion(){
+    public long getIdentificacion(){
         return identificacion;
     }
     
-    public void setIdentificacion(int identificacion){
+    public void setIdentificacion(long identificacion){
         this.identificacion = identificacion;
+    }
+    
+    public String getLibreta(){
+        return libreta;
+    }
+    
+    public void setLibreta(String libreta){
+        this.libreta = libreta;
+    }
+    
+    public String getFechaLibreta(){
+        return fechaLibreta;
+    }
+    
+    public void setFechaLibreta(String fechaLibreta){
+        this.fechaLibreta = fechaLibreta;
+    }
+    
+    // Método para obtener la imagen en función del sexo
+    public String getImagenSexo() {
+
+        switch (sexo.toLowerCase()) {
+            case "femenino":
+                return "images/icono_mujer.png"; 
+            case "masculino":
+                return "images/icono_hombre.png";
+            default:
+                return "images/otro.png";
+        }
     }
 }

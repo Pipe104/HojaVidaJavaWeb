@@ -11,6 +11,7 @@ package logic;
 
 public class Experiencia {
     private String experiencia;
+    private String perfil;
     
     public String getExperiencia(){
         return experiencia;
@@ -18,5 +19,13 @@ public class Experiencia {
  
     public void setExperiencia(String experiencia){
         this.experiencia = experiencia;
+    }
+    
+    public String getPerfil(){
+        return perfil;
+    }
+    
+    public void setPerfil(String perfil){
+        this.perfil = perfil;
     }
 }
